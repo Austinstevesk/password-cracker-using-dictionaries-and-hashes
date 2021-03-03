@@ -2,7 +2,7 @@ import hashlib #Previously MD5
 
 flag = 0
 pass_hash = input("Enter MD5 hash: ")
-wordlist = input("Enter File name: ")
+wordlist = input("Enter File name: ") #should be existing, can be downloaded.
 
 try:
     pass_file = open(wordlist, "r")
