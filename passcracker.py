@@ -1,7 +1,7 @@
 import hashlib #Previously MD5
 
 flag = 0
-pass_hash = input("Enter MD5 hash: ")
+pass_hash = input("Enter MD5 hash: ") #eg d55e2b075670edeffabb2d23bfb6c1
 wordlist = input("Enter File name: ") #should be existing, can be downloaded.
 
 try:
