@@ -1,3 +1,4 @@
+#The procedure can be automated so that the hash can be generated automatically
 import hashlib #Previously MD5
 
 flag = 0
