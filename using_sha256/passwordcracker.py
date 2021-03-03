@@ -1,3 +1,4 @@
+import hashlib
 user_hash_dict = {}
 
 with open('comm_passwords.txt', 'r') as f:
@@ -14,5 +15,11 @@ with open('username_hashpass.txt', 'r') as t:
 
 for user, hash in user_hash_dict.items():
     print(user, hash)
+
+for password in comm_passwords:
+    hashed_pass = hashlib.sha256(password.encode('utf-8')).hexdigest()
+    for user, hash in user_hash_dict.items():
+        if hashed_pass == hash:
+            print(f"Hash found!\n {username}:{password}")
 
 
