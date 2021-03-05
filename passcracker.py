@@ -12,7 +12,7 @@ except:
     quit()
 
 for word in pass_file:
-    enc_word = word.encode('utf-8')
+    enc_word = word.encode('utf-8') #define encoding
     digest = hashlib.md5(enc_word.strip()).hexdigest()
  
     if digest == pass_hash:
