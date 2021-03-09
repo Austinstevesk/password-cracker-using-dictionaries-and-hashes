@@ -22,7 +22,7 @@ for word in pass_file:
         break
 
 if flag == 0:
-    print('Passcode not in the list')
+    print('Passcode not in the list') #Gives an exception if the password is not in the list
 
 
     
