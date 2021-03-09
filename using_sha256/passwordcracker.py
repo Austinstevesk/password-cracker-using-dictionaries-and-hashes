@@ -1,7 +1,7 @@
 import hashlib
 user_hash_dict = {}
 
-with open('comm_passwords.txt', 'r') as f:
+with open('comm_passwords.txt', 'r') as f: #Reads common password list
     comm_passwords = f.read().splitlines() #list
 
 with open('username_hashpass.txt', 'r') as t:
